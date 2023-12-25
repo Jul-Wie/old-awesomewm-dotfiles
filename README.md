@@ -55,12 +55,17 @@ and
 
 ##### Delete or disable whatever dm you do have installed:
 For lightdm for example:  
+
     sudo pacman -Rs lightdm  
-or  
+    
+or only disable: 
+
     sudo systemctl disable lightdm  
 
 ##### then enable ly:
+
     sudo systemctl enable ly  
+    
 If that doesn't work check https://github.com/fairyglade/ly
 
 ## Main differences from crylia-theme
