@@ -38,7 +38,10 @@ ZSH theme is (adjusted) from https://github.com/romkatv/powerlevel10k
 ### Steps
 #### Install dependencies: (exclude any optionals you don't want)  
 For arch:  
+
     yay -S picom-git awesome-git rofi-git spotify-tui cava   
+
+and
 
     sudo pacman -S spotifyd pulseaudio pulseaudio-alsa alacritty thunar ly papirus-icon-theme upower bluez bluez-utils playerctl ttf-meslo-nerd-font-powerlevel10k  
 
