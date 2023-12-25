@@ -55,7 +55,7 @@ ZSH theme is (adjusted) from https://github.com/romkatv/powerlevel10k
   sudo pacman -Rs lightdm \
   or \
   sudo systemctl disable lightdm \
-
+\
   **then enable ly:** \
   sudo systemctl enable ly \
 If that doesn't work check https://github.com/fairyglade/ly
@@ -64,4 +64,6 @@ If that doesn't work check https://github.com/fairyglade/ly
 - No bottom dock since all open apps are visible in the top bar and opening apps can be done through rofi, so it's basically useless and annoying to manually configure
 - Slightly different top bar set-up including working wifi (using  the systray widget which was already included in crylia-theme but used exclively for wifi so there's actually a menu to connect to wifi networks)
 - Included startup apps (just picom for me) in startup in rc.lua and deleted separate startup script
+- Use of more lightweight ly theme rather than lightdm
+- IMO better and more usable alacritty config
   
