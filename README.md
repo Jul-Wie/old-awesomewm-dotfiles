@@ -36,7 +36,7 @@ I stole my awesomewm config from https://github.com/Crylia/crylia-theme and made
 **Git clone and copy into config folder:** \
 git clone https://github.com/Jul-Wie/dotfiles \
 cp -r dotfiles/.config/awesome ~/.config/. \
-cp -r dotfiles/.config/alacritty ~/.config/. \
+cp -r dotfiles/.config/alacritty ~/.config/. 
 
 **Next step:** (wip)
 
