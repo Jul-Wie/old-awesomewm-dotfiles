@@ -2,6 +2,7 @@
 The setup i personally use on my laptop. \
 awesomewm config from https://github.com/Crylia/crylia-theme with a few adjustments. (didn't fork bc i forgot to do that when i made this repo (im to lazy to remake) and this is just a personal setup for me anyway)
 
+ZSH theme is (adjusted) from https://github.com/romkatv/powerlevel10k
 
 ## List of stuff
 - OS: arch based
@@ -30,18 +31,23 @@ awesomewm config from https://github.com/Crylia/crylia-theme with a few adjustme
 - cava (just a sound visualiser)
 - alacritty
 - thunar
+- upower (for power widgets)
+- bluez (bluetooth)
+- xorg-setxkbmap (to set keyboard layout)
+- ttf-meslo-nerd-font-powerlevel10k terminalfont (required by powerlevel10k ZSH theme)
   
 ### Steps
 **Install dependencies:** (exclude any optionals you don't want)\
   for arch: \
   yay -S picom-git awesome-git rofi-git spotify-tui cava \
 \
-  sudo pacman -S spotifyd pulseaudio alacritty thunar ly
+  sudo pacman -S spotifyd pulseaudio pulseaudio-alsa alacritty thunar ly papirus-icon-theme upower bluez bluez-utils playerctl ttf-meslo-nerd-font-powerlevel10k
 \
 **Git clone and copy into config folder:** \
   git clone https://github.com/Jul-Wie/dotfiles \
   cp -r dotfiles/.config/awesome ~/.config/. \
   cp -r dotfiles/.config/alacritty ~/.config/. \
+  cp -r dotfiles/.config/picom.conf ~/.config/. \
 
 **Set up ly as display manager:**
   **Delete or disable whatever dm you do have installed:** \
