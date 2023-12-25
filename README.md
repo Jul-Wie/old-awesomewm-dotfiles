@@ -47,7 +47,7 @@ ZSH theme is (adjusted) from https://github.com/romkatv/powerlevel10k
   git clone https://github.com/Jul-Wie/dotfiles \
   cp -r dotfiles/.config/awesome ~/.config/. \
   cp -r dotfiles/.config/alacritty ~/.config/. \
-  cp -r dotfiles/.config/picom.conf ~/.config/. \
+  cp -r dotfiles/.config/picom.conf ~/.config/. 
 
 **Set up ly as display manager:**
   **Delete or disable whatever dm you do have installed:** \
