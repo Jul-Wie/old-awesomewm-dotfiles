@@ -1,6 +1,6 @@
 # Dotfiles
-This repo contain the dotfiles i use on my laptop, so it's all lightweight stuff. \
-I stole my awesomewm config from https://github.com/Crylia/crylia-theme and made a few adjustments.
+The setup i personally use on my laptop. \
+awesomewm config from https://github.com/Crylia/crylia-theme with a few adjustments. (didn't fork bc i forgot to do that when i made this repo (im to lazy to remake) and this is just a personal setup for me anyway)
 
 
 ## List of stuff
@@ -22,25 +22,37 @@ I stole my awesomewm config from https://github.com/Crylia/crylia-theme and made
 - awesome-git
 - rofi-git
 - pulseaudio
-- 
+- probably more i forgot: see https://github.com/Crylia/crylia-theme
+  
 ### Optional/replacable dependencies
 - spotifyd
 - spotify-tui
 - cava (just a sound visualiser)
 - alacritty
 - thunar
-
+  
 ### Steps
-**Install dependencies:** \
+**Install dependencies:** (exclude any optionals you don't want)\
+  for arch: \
+  yay -S picom-git awesome-git rofi-git spotify-tui cava \
+\
+  sudo pacman -S spotifyd pulseaudio alacritty thunar ly
 \
 **Git clone and copy into config folder:** \
-git clone https://github.com/Jul-Wie/dotfiles \
-cp -r dotfiles/.config/awesome ~/.config/. \
-cp -r dotfiles/.config/alacritty ~/.config/. 
+  git clone https://github.com/Jul-Wie/dotfiles \
+  cp -r dotfiles/.config/awesome ~/.config/. \
+  cp -r dotfiles/.config/alacritty ~/.config/. \
 
-**Next step:** (wip)
+**Set up ly as display manager:**
+  **Delete or disable whatever dm you do have installed:** \
+  For lightdm for example: \
+  sudo pacman -Rs lightdm \
+  or \
+  sudo systemctl disable lightdm \
 
-
+  **then enable ly:** \
+  sudo systemctl enable ly \
+If that doesn't work check https://github.com/fairyglade/ly
 ### Main differences from crylia-theme
 - In my opinion more intuitive keybindings
 - No bottom dock since all open apps are visible in the top bar and opening apps can be done through rofi, so it's basically useless and annoying to manually configure
