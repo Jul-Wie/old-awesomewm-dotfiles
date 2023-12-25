@@ -38,7 +38,7 @@ git clone https://github.com/Jul-Wie/dotfiles \
 cp -r dotfiles/.config/awesome ~/.config/. \
 cp -r dotfiles/.config/alacritty ~/.config/. \
 
-
+**Next step:** (wip)
 
 
 ### Main differences from crylia-theme
